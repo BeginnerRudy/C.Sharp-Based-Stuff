@@ -1,6 +1,6 @@
 # Asp.Net Core 学习笔记
 
-相关项目：[Asp.Net Core学习 WebApp版 员工管理系统](https://github.com/Deali-Axy/AspNetCore-Learning-WebApi)
+相关项目：[Asp.Net Core学习 WebApp版 员工管理系统](https://github.com/BeginnerRudy/EmployeeManagement)
 
 ## 常识
 
