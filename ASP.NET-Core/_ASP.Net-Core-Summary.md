@@ -14,10 +14,21 @@ So, the learning goal is able to use ASP.NET Core for CRUD web app.
 
 - [x] Follow the video, and made a CRUD web app
 - [x] Document the process of CRUD
-  - [ ] Make them into Anki Cards
+  - [x] Make them into Anki Cards
 - [ ] Build a simple CRUD with myself
 
 # ASP.NET CORE
+
+## Overview
+
+ASP.NET Core helps developer to build web applications. The fundamental contains 
+
+- the basic configuration files
+- how the main method start ASP.NET Core application
+- middleware pipeline to handle the request from client
+- IoC with dependency injection
+- Logging
+- Error and Exception Handling
 
 ## Environment Setup
 
@@ -96,6 +107,24 @@ These are all about how to show the error and exception to the browser, that is 
 - Unit test
 
 # ASP.NET CORE MVC
+
+## Overview
+
+MVC pattern is a way to architect our web app, ASP.NET Core MVC helps developers to build MVC-based web app. The concepts of ASP.NET Core MVC can be orgnaized by the process of it processing a HTTP request. 
+
+Step 0: We ==add the MVC to the request pipeline== to enable MVC pattern on our server. 
+
+Step 1: The request comes in, so the ==routing system== needs to find a matched controller to deal with it.
+
+Step 2: The controller is found, then we need to do ==model binding== to convert the request data to parameters and pass it to the controller.
+
+Step 3: After the model is binded, we need to perform ==model validation== as well for checking constraints. 
+
+Step 4: Then, the controller get called, it find appropriate model and select view and ==pass data to View== to render.
+
+Step 5: ==Some View related knowledge==
+
+Step 6: The browser get View and render it to show the user.
 
 ## Serve Web pages with MVC controller
 
@@ -186,6 +215,13 @@ Your app can also use [dependency injection in view files](https://docs.microsof
 
 # Entity Framework Core
 
+## Overview
+
+This is an ORM framework and the key takeaway are 
+
+- DbContext == a database 
+- DbSet == a table
+
 ## Saving data with Entity Framework Core
 
 [Entity Framework Core](./Entity-Framework-Core.md)
@@ -200,7 +236,102 @@ Your app can also use [dependency injection in view files](https://docs.microsof
 
 # ASP.NET CORE Identity
 
+## Overview
+
+The key class in this API are 
+
+- Data manager class
+  - UserManager
+  - SignInManager
+- Data model class
+  - `IdentityRole`
+  - `IdentityRoleClaim`
+  - `IdentityUser`
+  - `IdentityUserClaim`
+  - `IdentityUserLogin`
+  - `IdentityUserRole`
+  - `IdentityUserToken`
+
+Authentication
+
+- Register & signing & logout with UserManager + SignInManager
+
+Authorization
+
+- Simple/Role-based/Claim-based/Policy-based
+- Authorization attributes
+  - [Authorize]
+  - [AollowAnonymous]
+
 ## Authetication and Authorization with ASP.NET Core Identity 
 
 [ASP.NET Core Identity](./ASP.NET-Core-Identity.md)
 
+- How to use ASP.NET Core Identity?
+
+  - IdentityDbContext
+  - Add Identity Service
+  - Add Authetication Middleware
+  - Generate Identity tables in the database
+
+- Register new user
+
+- UserManager
+
+  - CreateAsync
+  - DeleteAsync
+  - UpdateAsync
+  - Etc...
+
+- SignInManager
+
+  - SignInAsync
+  - SignOutAsync
+  - IsSignedIn
+  - Etc...
+
+- Password complexity configuration
+
+- Login a user
+
+- Redirect user to original url after login and prevent open redirect attacks
+
+- Authorization
+
+  - Role based Authorization
+    - CRUD roles -> IdentityRole class
+    - Add/Remove IdentityUser to Identity Role
+    - How to do role based authentication?
+      - [Authorize(Role = "Role1,Role2")] -> Role1 or Role2 can have access
+
+  
+
+  ```c#
+  [Authorize(Role = "Role1")]
+  [Authorize(Role = "Role2")]
+  public void actionMethod();
+  
+  Need to be both Role1 and Role2 to have access
+  ```
+
+  
+
+  - Claim based Authorization
+    - Definition of User Claim -> user claims == (name, value) pair used for access control.
+    - Manage User Claim
+    - How to perform Claim based Authorization
+      - Create Claim Policy in startup.cs
+      - Use the policy for authorization checks -> [Authorize(Policy = "PolicyName")]
+      - Claim type and claim value
+  - Policy based Authorization
+  - [Authorize] or [AllowAnonymous]
+
+- Extend IdentityUser for additional property
+
+- Authorizatioin in views via dependency injection
+
+- External identity providers
+
+- Email Confirmation
+
+- Forget password and reset password

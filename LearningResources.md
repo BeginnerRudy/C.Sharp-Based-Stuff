@@ -79,21 +79,39 @@ https://github.com/Deali-Axy/AspNetCore-Learning-Mvc
 
 [ASP.NET Core Online Shop Tutorial - Intermediate](https://www.youtube.com/playlist?list=PLOeFnOV9YBa50nT3fEs0yzgMmK1MRKw3j)![Screen Shot 2021-11-17 at 8.51.05 am](/Users/rudy/Library/Application Support/typora-user-images/Screen Shot 2021-11-17 at 8.51.05 am.png)
 
-[.NET Core 微服务架构最佳实践](https://time.geekbang.org/course/intro/100044601?tab=comment)
 
-https://www.imooc.com/note/1188?sort=hot&page=1
 
-https://coding.imooc.com/class/chapter/451.html#Anchor
+高阶理论
+
+[.NET Core 微服务架构最佳实践 ](https://time.geekbang.org/course/intro/100044601?tab=comment)
+
+[商城高并发秒杀系统(.NET Core版)](https://blog.csdn.net/aa2528877987/category_11095105.html)
+
+部分掌握
+
+[.Net Core 开发电商后端API ，吃透RESTful风格](https://coding.imooc.com/class/chapter/451.html#Anchor)
+
+- 第6章 【复合搜索】深入理解GET请求
+- 第7章 【新建产品】POST 请求全面剖析 
+- 第14章 【RESTful技能进阶】数据分页显示
+- 第16章 【RESTful技能进阶】数据塑形
+- 第18章 【项目上线】容器化、测试、和部署
+
+已经掌握
+
+[打造你的第一个ASP.NET5 MVC网站应用](https://www.imooc.com/note/1188?sort=hot&page=1)
+
+
+
+
+
+B站
 
 [.NET/C#千万级高并发秒杀实战](https://www.bilibili.com/video/BV1ET4y1f72B/)
 
-https://blog.csdn.net/sD7O95O/article/details/118097267?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link
+[从项目开发学架构设计——架构师的养成和实战（C# / .NET6 / Webapi / 架构 / 微服务 / ELK / Redis / Mysql）](https://www.bilibili.com/video/BV1ph411m74C?spm_id_from=333.999.0.0)
 
-[解决千万数据高并发的asp.net项目解决方案？](https://www.zhihu.com/question/268441300)
-
-[面试官绝杀：.NET Core系统是如何支撑千万并发的？](https://jishuin.proginn.com/p/763bfbd2f589)
-
-[商城高并发秒杀系统(.NET Core版)](https://blog.csdn.net/aa2528877987/category_11095105.html)
+[【最新C#/.NET教程】双11高并发秒杀场景项目落地实战教程 | .NET架构师进阶必备（.NETCore/.NET6/项目实战/架构师）B0263](https://www.bilibili.com/video/BV1p64y1x7WK?from=search&seid=11003666447057250281&spm_id_from=333.337.0.0)
 
 [2021年最新C#/.Net Core亿级流量秒杀系统分布式缓存Redis](https://www.bilibili.com/video/BV1yv411G7Us?from=search&seid=16017161268168190717&spm_id_from=333.337.0.0)
 
@@ -101,12 +119,16 @@ https://blog.csdn.net/sD7O95O/article/details/118097267?spm=1001.2101.3001.6650.
 
 [ASP.NET Core分布式项目实战](https://www.bilibili.com/video/BV1Xg4y1v7Xx/?spm_id_from=333.788.b_7265636f5f6c697374.18)
 
-[【最新C#/.NET教程】双11高并发秒杀场景项目落地实战教程 | .NET架构师进阶必备（.NETCore/.NET6/项目实战/架构师）B0263](https://www.bilibili.com/video/BV1p64y1x7WK?from=search&seid=11003666447057250281&spm_id_from=333.337.0.0)
 
-[从项目开发学架构设计——架构师的养成和实战（C# / .NET6 / Webapi / 架构 / 微服务 / ELK / Redis / Mysql）](https://www.bilibili.com/video/BV1ph411m74C?spm_id_from=333.999.0.0)
+
+文章
+
+https://blog.csdn.net/sD7O95O/article/details/118097267?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link
+
+[解决千万数据高并发的asp.net项目解决方案？](https://www.zhihu.com/question/268441300)
+
+[面试官绝杀：.NET Core系统是如何支撑千万并发的？](https://jishuin.proginn.com/p/763bfbd2f589)
 
 https://www.cnblogs.com/zuowj/p/11181726.html
-
-https://www.zhaofenxiang.com/p/2146
 
 如何进入C#开发圈
